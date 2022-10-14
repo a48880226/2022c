@@ -1,10 +1,10 @@
 # 2022c
 資傳一甲 程式設計 Steak的程式倉庫
-# week01
+## week01
 中秋節放假
-# week06
-### 第一支程式
-考試九九乘法表 考前複習,考後檢討同學出錯的狀況
+## week06
+* 第一支程式
+  * 畫星星 建立鷹架
 ```cpp
 #include <stdio.h>
 int main(void){
@@ -15,8 +15,8 @@ int main(void){
 	return 0;
 }
 ```
-### 第二支程式
-畫星星-金字塔 使用的技巧,先用左手i來建立鷹架
+* 第二支程式
+  * 畫星星-金字塔
 ```cpp
 #include <stdio.h>
 int main(void){
@@ -34,8 +34,8 @@ int main(void){
 	return 0;
 }
 ```
-### 第三支程式
-暴力破解法-找出兩數值的最大公因數
+* 第三支程式
+  * 暴力破解法-找出兩數值的最大公因數
 ```cpp
 #include <stdio.h>
 int main(void){
@@ -51,8 +51,8 @@ int main(void){
 	return 0;
 }
 ```
-### 第四支程式
-輾轉相除法-找出兩數值的最大公因數 暴力破解法電腦跑太慢會lag
+* 第四支程式
+  * 輾轉相除法-找出兩數值的最大公因數 暴力破解法電腦跑太慢會lag
 ```cpp
 #include <stdio.h>
 int main(void){
@@ -72,8 +72,8 @@ int main(void){
 	return 0;
 }
 ```
-### 第五支程式
-判斷if括號裡面的值成不成立
+* 第五支程式
+  * 判斷if括號裡面的值成不成立
 ```cpp
 #include <stdio.h>
 int main(void){
