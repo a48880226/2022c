@@ -376,3 +376,66 @@ int main(void){
 	return 0;
 }
 ```
+## week07
+* 第一支程式
+  * int只能存32位元 long long int可以存64位元
+```cpp
+#include <stdio.h>
+int main(void){
+	int n=1234567812345678;
+	printf("%d\n",n);
+	long long int a=1234567812345678;
+	printf("%lld\n",a);
+	return 0;
+}
+```
+* 第二支程式
+  * 暴力破解法-找出兩數值的最大公因數 用64位元
+```cpp
+#include <stdio.h>
+int main(void){
+	long long int a,b;
+	scanf("%lld%lld",&a,&b);
+	long long int ans;
+	for(long long int i=1;i<=a;i++){
+		if(a%i==0 && b%i==0){
+			ans=i;
+		}
+	}
+	printf("答案是:%lld\n",ans);
+	return 0;
+}
+```
+* 第三支程式
+  * 輾轉相除法-找出兩數值的最大公因數 用64位元
+```cpp
+#include <stdio.h>
+int main(void){
+	long long int a,b,c;
+	scanf("%lld%lld",&a,&b);
+	while(1){
+		c=a%b;
+		printf("%lld %lld %lld\n",a,b,c);
+		if(c==0){
+			break;
+		}
+		a=b;
+		b=c;
+	}
+	printf("答案是:%lld\n",b);
+	return 0;
+}
+```
+* 第四支程式
+  * 取出個位數
+```cpp
+#include <stdio.h>
+int main(void){
+	int n=123456789;
+	while(n>0){
+		printf("個位數是%d\n",n%10);
+		n=n/10;
+	}
+	return 0;
+}
+```
