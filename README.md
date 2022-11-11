@@ -440,6 +440,96 @@ int main(void){
 }
 ```
 ## week08
+* 第一支程式
+  * 只用2個for印出星星階層
+```cpp
+#include <stdio.h>
+int main(void){
+	int n;
+	scanf("%d",&n);
+	for(int i=1;i<=n;i++){
+		for(int j=1;j<=n;j++){
+			if(j<=n-i){
+				printf(" ");
+			}
+			else{
+				printf("*");
+			}
+		}
+		printf("\n");
+	}
+	return 0;
+}
+```
+* 第二支程式
+  * 只用2個while印出星星階層
+```cpp
+#include <stdio.h>
+int main(void){
+	int n;
+	scanf("%d",&n);
+	int i=1;
+	while(i<=n){
+		int j=1;
+		while(j<=n){
+			if(j<=n-i){
+				printf(" ");
+			}
+			else{
+				printf("*");
+			}
+			j++;
+		}
+		printf("\n");
+		i++;
+	}
+	return 0;
+}
+```
+* 第三支程式
+  * 輸入一個數 判斷它是不是質數
+```cpp
+#include <stdio.h>
+int main(void){
+	printf("要判斷你輸入的數字是不是很孤獨的質數:");
+	int n;
+	scanf("%d",&n);
+	int bad=0;
+	for(int i=2;i<n;i++){
+		if(n%i==0){
+			bad=1;
+		}
+	}
+	if(bad==0){
+		printf("%d是質數(沒有壞掉)",n);
+	}
+	else{
+		printf("%d不是質數(早就壞掉了)",n);
+	}
+	return 0;
+}
+```
+* 第四支程式
+  * 輸入一個數n 印出2到n之間的質數
+```cpp
+#include <stdio.h>
+int main(void){
+	int n;
+	scanf("%d",&n);
+	for(int i=2;i<=n;i++){
+		int bad=0;
+		for(int j=2;j<i;j++){
+			if(i%j==0){
+				bad=1;
+			}
+		}
+		if(bad==0){
+			printf("%d ",i);
+		}
+	}
+	return 0;
+}
+```
 ## week09
 * 期中考放假
 ## week10
