@@ -439,3 +439,33 @@ int main(void){
 	return 0;
 }
 ```
+## week08
+## week09
+* 期中考放假
+## week10
+* 第一支程式
+  * 宣告陣列 印出陣列的值
+```cpp
+#include <stdio.h>
+int main(void){
+	int a[4]={10,20,30,40};
+	printf("a[0]:%d\n",a[0]);
+	printf("a[1]:%d\n",a[1]);
+	printf("a[2]:%d\n",a[2]);
+	printf("a[3]:%d\n",a[3]);
+}
+```
+* 第二支程式
+  * 宣告陣列 使用迴圈印出陣列的值 倒著印出陣列的值
+```cpp
+#include <stdio.h>
+int main(void){
+	int a[4]={10,20,30,40};
+	for(int i=0;i<4;i++){
+		printf("a[%d]: %d\n",i,a[i]);
+	}
+	for(int i=3;i>=0;i--){
+		printf("%d ",a[i]);
+	}
+}
+```
